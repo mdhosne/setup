@@ -22,6 +22,7 @@ def main():
             add_contact(contacts)
         elif choice == "2":
             view_contacts(contacts)
+            load_contacts()
         elif choice == "3":
             search_contact(contacts)
         elif choice == "4":
@@ -34,6 +35,8 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+
+
 
 if __name__ == "__main__":
     main()
