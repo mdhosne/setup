@@ -20,6 +20,7 @@ def main():
         choice = input("Enter your choice (1-6): ").strip()
         if choice == "1":
             add_contact(contacts)
+            save_contacts(contacts)
         elif choice == "2":
             view_contacts(contacts)
             load_contacts()
@@ -27,8 +28,10 @@ def main():
             search_contact(contacts)
         elif choice == "4":
             update_contact(contacts)
+            save_contacts(contacts)
         elif choice == "5":
             delete_contact(contacts)
+            save_contacts(contacts)
         elif choice == "6":
             save_contacts(contacts)
             print("Exiting the Contact Management System. Goodbye!")
